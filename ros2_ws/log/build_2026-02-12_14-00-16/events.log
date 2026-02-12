@@ -1,0 +1,74 @@
+[0.000000] (-) TimerEvent: {}
+[0.000163] (-) JobUnselected: {'identifier': 'calculating_client'}
+[0.000215] (rm_server) JobQueued: {'identifier': 'rm_server', 'dependencies': OrderedDict()}
+[0.000237] (rm_server) JobStarted: {'identifier': 'rm_server'}
+[0.006211] (rm_server) JobProgress: {'identifier': 'rm_server', 'progress': 'cmake'}
+[0.006673] (rm_server) Command: {'cmd': ['/usr/bin/cmake', '/home/arcyfields/ros2/ros2_ws/src/rm_server', '-DCMAKE_INSTALL_PREFIX=/home/arcyfields/ros2/ros2_ws/install/rm_server'], 'cwd': '/home/arcyfields/ros2/ros2_ws/build/rm_server', 'env': OrderedDict([('TERM_SESSION_ID', 'd7e0c94f-5e9f-448a-a8b5-1cae7af57acb'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('SNAP_INSTANCE_KEY', ''), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('USER', 'arcyfields'), ('SNAP_COMMON', '/var/snap/clion/common'), ('XDG_SESSION_TYPE', 'x11'), ('SNAP_UID', '1000'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/share/gurumdds/cmake/../../../lib:/opt/ros/humble/lib'), ('HOME', '/home/arcyfields'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32'), ('OLDPWD', '/home/arcyfields/ros2/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('SNAP_USER_DATA', '/home/arcyfields/snap/clion/415'), ('CONNEXTDDS_DIR', '/opt/rti.com/rti_connext_dds-6.0.1'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-6.0.1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=20e94733d09e6d3ddcf28d34698d4afe'), ('SNAP_REVISION', '415'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/arcyfields/ros2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'arcyfields'), ('SNAP_CONTEXT', '15TLHSi70JkjDomYYa30rfEb2B0Hdv8KlrB9H-dF9zD6aPYgfxUD'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', '2025.3.2'), ('USERNAME', 'arcyfields'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'clion'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/arcyfields/.platformio/penv/bin'), ('SESSION_MANAGER', 'local/Arcy:@/tmp/.ICE-unix/2123,unix/Arcy:/tmp/.ICE-unix/2123'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7b33f363_2dfe_401e_a083_c2adf10d276e'), ('SNAP_DATA', '/var/snap/clion/415'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.143'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/arcyfields/snap/clion/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/home/arcyfields/ros2/ros2_ws/install/calculating_client:/opt/ros/humble'), ('SNAP_COOKIE', '15TLHSi70JkjDomYYa30rfEb2B0Hdv8KlrB9H-dF9zD6aPYgfxUD'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SNAP_NAME', 'clion'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('CONNEXTDDS_ARCH', 'x64Linux4gcc7.3.0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/arcyfields/ros2/ros2_ws/build/rm_server'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SNAP_REAL_HOME', '/home/arcyfields'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=20e94733d09e6d3ddcf28d34698d4afe'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('SNAP_EUID', '1000'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/clion/415'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/arcyfields/ros2/ros2_ws/install/calculating_client:/opt/ros/humble')]), 'shell': False}
+[0.069106] (rm_server) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099577] (-) TimerEvent: {}
+[0.120419] (rm_server) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.125711] (rm_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199709] (-) TimerEvent: {}
+[0.205710] (rm_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.215263] (rm_server) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.215346] (rm_server) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.215912] (rm_server) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.218539] (rm_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.282710] (rm_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.287880] (rm_server) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.287964] (rm_server) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.288205] (rm_server) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.289482] (rm_server) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299804] (-) TimerEvent: {}
+[0.400064] (-) TimerEvent: {}
+[0.412909] (rm_server) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.475003] (rm_server) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.477121] (rm_server) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.480625] (rm_server) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.500222] (-) TimerEvent: {}
+[0.504518] (rm_server) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600442] (-) TimerEvent: {}
+[0.646366] (rm_server) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):\n'}
+[0.646490] (rm_server) StderrLine: {'line': b'  execute_process(/usr/bin/python3 -m rosidl_adapter --package-name rm_server\n'}
+[0.646533] (rm_server) StderrLine: {'line': b'  --arguments-file\n'}
+[0.646709] (rm_server) StderrLine: {'line': b'  /home/arcyfields/ros2/ros2_ws/build/rm_server/rosidl_adapter__arguments__rm_server.json\n'}
+[0.646752] (rm_server) StderrLine: {'line': b'  --output-dir\n'}
+[0.646786] (rm_server) StderrLine: {'line': b'  /home/arcyfields/ros2/ros2_ws/build/rm_server/rosidl_adapter/rm_server\n'}
+[0.646818] (rm_server) StderrLine: {'line': b'  --output-file\n'}
+[0.646849] (rm_server) StderrLine: {'line': b'  /home/arcyfields/ros2/ros2_ws/build/rm_server/rosidl_adapter/rm_server.idls)\n'}
+[0.646877] (rm_server) StderrLine: {'line': b'  returned error code 1:\n'}
+[0.646906] (rm_server) StderrLine: {'line': b'\n'}
+[0.646935] (rm_server) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[0.646963] (rm_server) StderrLine: {'line': b'\n'}
+[0.646992] (rm_server) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main\n'}
+[0.647026] (rm_server) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[0.647055] (rm_server) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 86, in _run_code\n'}
+[0.647086] (rm_server) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[0.647113] (rm_server) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[0.647142] (rm_server) StderrLine: {'line': b'      sys.exit(main())\n'}
+[0.647168] (rm_server) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[0.647205] (rm_server) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[0.647233] (rm_server) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl\n'}
+[0.647261] (rm_server) StderrLine: {'line': b'      return convert_msg_to_idl(\n'}
+[0.647288] (rm_server) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl\n'}
+[0.647316] (rm_server) StderrLine: {'line': b'      msg = parse_message_string(package_name, input_file.stem, content)\n'}
+[0.647342] (rm_server) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 544, in parse_message_string\n'}
+[0.647367] (rm_server) StderrLine: {'line': b'      msg = MessageSpecification(pkg_name, msg_name, fields, constants)\n'}
+[0.647394] (rm_server) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 388, in __init__\n'}
+[0.647419] (rm_server) StderrLine: {'line': b'      self.base_type = BaseType(\n'}
+[0.647445] (rm_server) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__\n'}
+[0.647471] (rm_server) StderrLine: {'line': b'      raise InvalidResourceName(\n'}
+[0.647498] (rm_server) StderrLine: {'line': b'\n'}
+[0.647528] (rm_server) StderrLine: {'line': b"  rosidl_adapter.parser.InvalidResourceName: 'get_el_gamal_params' is an\n"}
+[0.647555] (rm_server) StderrLine: {'line': b"  invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'\n"}
+[0.647583] (rm_server) StderrLine: {'line': b'\n'}
+[0.647612] (rm_server) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.647640] (rm_server) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[0.647667] (rm_server) StderrLine: {'line': b'  CMakeLists.txt:15 (rosidl_generate_interfaces)\n'}
+[0.647699] (rm_server) StderrLine: {'line': b'\n'}
+[0.647727] (rm_server) StderrLine: {'line': b'\x1b[0m\n'}
+[0.647754] (rm_server) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.647791] (rm_server) StdoutLine: {'line': b'See also "/home/arcyfields/ros2/ros2_ws/build/rm_server/CMakeFiles/CMakeOutput.log".\n'}
+[0.650812] (rm_server) CommandEnded: {'returncode': 1}
+[0.665957] (rm_server) JobEnded: {'identifier': 'rm_server', 'rc': 1}
+[0.676423] (-) EventReactorShutdown: {}

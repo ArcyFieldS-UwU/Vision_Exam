@@ -1,0 +1,16 @@
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/lib/calculating_client/client
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/ament_index/resource_index/package_run_dependencies/calculating_client
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/ament_index/resource_index/parent_prefix_path/calculating_client
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/environment/ament_prefix_path.sh
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/environment/ament_prefix_path.dsv
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/environment/path.sh
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/environment/path.dsv
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/local_setup.bash
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/local_setup.sh
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/local_setup.zsh
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/local_setup.dsv
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/package.dsv
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/ament_index/resource_index/packages/calculating_client
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/cmake/calculating_clientConfig.cmake
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/cmake/calculating_clientConfig-version.cmake
+/home/arcyfields/ros2/ros2_ws/install/calculating_client/share/calculating_client/package.xml

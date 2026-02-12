@@ -1,0 +1,6 @@
+Invoking command in '/home/arcyfields/ros2/ros2_ws/build/rm_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/arcyfields/ros2/ros2_ws/src/rm_server -DCMAKE_INSTALL_PREFIX=/home/arcyfields/ros2/ros2_ws/install/rm_server
+Invoked command in '/home/arcyfields/ros2/ros2_ws/build/rm_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/arcyfields/ros2/ros2_ws/src/rm_server -DCMAKE_INSTALL_PREFIX=/home/arcyfields/ros2/ros2_ws/install/rm_server
+Invoking command in '/home/arcyfields/ros2/ros2_ws/build/rm_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arcyfields/ros2/ros2_ws/build/rm_server -- -j32 -l32
+Invoked command in '/home/arcyfields/ros2/ros2_ws/build/rm_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arcyfields/ros2/ros2_ws/build/rm_server -- -j32 -l32
+Invoking command in '/home/arcyfields/ros2/ros2_ws/build/rm_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arcyfields/ros2/ros2_ws/build/rm_server
+Invoked command in '/home/arcyfields/ros2/ros2_ws/build/rm_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arcyfields/ros2/ros2_ws/build/rm_server

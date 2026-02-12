@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "rm_server__py",
+		"source" : "/home/arcyfields/ros2/ros2_ws/build/rm_server/rm_server__py"
+	}
+}

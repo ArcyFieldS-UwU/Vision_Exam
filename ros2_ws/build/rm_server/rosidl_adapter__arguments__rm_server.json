@@ -1,0 +1,7 @@
+{
+  "package_name": "rm_server",
+  "non_idl_tuples": [
+    "/home/arcyfields/ros2/ros2_ws/src/rm_server:msg/GetElGamalParams.msg",
+    "/home/arcyfields/ros2/ros2_ws/src/rm_server:srv/ElGamalEncrypt.srv"
+  ]
+}
