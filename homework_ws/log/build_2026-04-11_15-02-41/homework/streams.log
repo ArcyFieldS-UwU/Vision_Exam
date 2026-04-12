@@ -1,0 +1,14 @@
+[0.008s] Invoking command in '/home/arcyfields/ros2/homework_ws/build/homework': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arcyfields/ros2/homework_ws/build/homework -- -j32 -l32
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target main_node[0m
+[0.078s] [ 25%] [32mBuilding CXX object CMakeFiles/main_node.dir/src/main.cpp.o[0m
+[0.078s] [ 50%] [32mBuilding CXX object CMakeFiles/main_node.dir/src/kalman_filter_and_smth_else.cpp.o[0m
+[5.712s] [ 75%] [32m[1mLinking CXX executable main_node[0m
+[6.124s] /usr/bin/ld: CMakeFiles/main_node.dir/src/main.cpp.o: in function `void std::_Destroy<Armor>(Armor*)':
+[6.124s] main.cpp:(.text._ZSt8_DestroyI5ArmorEvPT_[_ZSt8_DestroyI5ArmorEvPT_]+0x18): undefined reference to `Armor::~Armor()'
+[6.132s] /usr/bin/ld: CMakeFiles/main_node.dir/src/kalman_filter_and_smth_else.cpp.o: in function `void __gnu_cxx::new_allocator<Armor>::destroy<Armor>(Armor*)':
+[6.132s] kalman_filter_and_smth_else.cpp:(.text._ZN9__gnu_cxx13new_allocatorI5ArmorE7destroyIS1_EEvPT_[_ZN9__gnu_cxx13new_allocatorI5ArmorE7destroyIS1_EEvPT_]+0x1c): undefined reference to `Armor::~Armor()'
+[6.161s] collect2: error: ld returned 1 exit status
+[6.162s] gmake[2]: *** [CMakeFiles/main_node.dir/build.make:262：main_node] 错误 1
+[6.162s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/main_node.dir/all] 错误 2
+[6.162s] gmake: *** [Makefile:146：all] 错误 2
+[6.164s] Invoked command in '/home/arcyfields/ros2/homework_ws/build/homework' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arcyfields/ros2/homework_ws/build/homework -- -j32 -l32

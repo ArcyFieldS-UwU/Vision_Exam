@@ -1,0 +1,26 @@
+[0.008s] Invoking command in '/home/arcyfields/ros2/homework_ws/build/homework': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arcyfields/ros2/homework_ws/build/homework -- -j32 -l32
+[0.046s] [35m[1mConsolidate compiler generated dependencies of target main_node[0m
+[0.066s] [ 25%] [32mBuilding CXX object CMakeFiles/main_node.dir/src/main.cpp.o[0m
+[5.546s] [ 50%] [32m[1mLinking CXX executable main_node[0m
+[6.024s] [100%] Built target main_node
+[6.033s] Invoked command in '/home/arcyfields/ros2/homework_ws/build/homework' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arcyfields/ros2/homework_ws/build/homework -- -j32 -l32
+[6.040s] Invoking command in '/home/arcyfields/ros2/homework_ws/build/homework': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arcyfields/ros2/homework_ws/build/homework
+[6.045s] -- Install configuration: ""
+[6.046s] -- Installing: /home/arcyfields/ros2/homework_ws/install/homework/lib/homework/main_node
+[6.048s] -- Set runtime path of "/home/arcyfields/ros2/homework_ws/install/homework/lib/homework/main_node" to ""
+[6.048s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/package_run_dependencies/homework
+[6.048s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/parent_prefix_path/homework
+[6.048s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/ament_prefix_path.sh
+[6.048s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/ament_prefix_path.dsv
+[6.048s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/path.sh
+[6.048s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/path.dsv
+[6.048s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.bash
+[6.048s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.sh
+[6.048s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.zsh
+[6.049s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.dsv
+[6.049s] -- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/package.dsv
+[6.049s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/packages/homework
+[6.049s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/cmake/homeworkConfig.cmake
+[6.049s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/cmake/homeworkConfig-version.cmake
+[6.049s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/package.xml
+[6.050s] Invoked command in '/home/arcyfields/ros2/homework_ws/build/homework' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arcyfields/ros2/homework_ws/build/homework

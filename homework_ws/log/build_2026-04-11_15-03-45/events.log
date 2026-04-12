@@ -1,0 +1,102 @@
+[0.000000] (-) TimerEvent: {}
+[0.000253] (homework) JobQueued: {'identifier': 'homework', 'dependencies': OrderedDict()}
+[0.000377] (homework) JobStarted: {'identifier': 'homework'}
+[0.005993] (homework) JobProgress: {'identifier': 'homework', 'progress': 'cmake'}
+[0.006580] (homework) JobProgress: {'identifier': 'homework', 'progress': 'build'}
+[0.007281] (homework) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/arcyfields/ros2/homework_ws/build/homework', '--', '-j32', '-l32'], 'cwd': '/home/arcyfields/ros2/homework_ws/build/homework', 'env': OrderedDict([('TERM_SESSION_ID', '2352722d-a0c8-472b-8ad7-07e500691be0'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('SNAP_INSTANCE_KEY', ''), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('USER', 'arcyfields'), ('SNAP_COMMON', '/var/snap/clion/common'), ('XDG_SESSION_TYPE', 'x11'), ('SNAP_UID', '1000'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/share/gurumdds/cmake/../../../lib:/opt/ros/humble/lib'), ('HOME', '/home/arcyfields'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32'), ('OLDPWD', '/home/arcyfields/ros2/homework_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('SNAP_USER_DATA', '/home/arcyfields/snap/clion/425'), ('CONNEXTDDS_DIR', '/opt/rti.com/rti_connext_dds-6.0.1'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/clion_clion.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-6.0.1'), ('MANAGERPID', '1833'), ('SYSTEMD_EXEC_PID', '2169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '425'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5319'), ('COLCON_PREFIX_PATH', '/home/arcyfields/ros2/homework_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'arcyfields'), ('SNAP_CONTEXT', '15TLHSi70JkjDomYYa30rfEb2B0Hdv8KlrB9H-dF9zD6aPYgfxUD'), ('JOURNAL_STREAM', '8:9449'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', '2025.3.3'), ('USERNAME', 'arcyfields'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'clion'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/arcyfields/.platformio/penv/bin'), ('SESSION_MANAGER', 'local/Arcy:@/tmp/.ICE-unix/2141,unix/Arcy:/tmp/.ICE-unix/2141'), ('INVOCATION_ID', 'd410818ab8d841a398ef93deff7de4ee'), ('XDG_MENU_PREFIX', 'gnome-'), ('SNAP_DATA', '/var/snap/clion/425'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('DESKTOP_STARTUP_ID', 'gnome-shell/CLion/2169-2-Arcy_TIME87631'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/arcyfields/snap/clion/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/home/arcyfields/ros2/homework_ws/install/homework:/opt/ros/humble'), ('SNAP_COOKIE', '15TLHSi70JkjDomYYa30rfEb2B0Hdv8KlrB9H-dF9zD6aPYgfxUD'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SNAP_NAME', 'clion'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('CONNEXTDDS_ARCH', 'x64Linux4gcc7.3.0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/arcyfields/ros2/homework_ws/build/homework'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SNAP_REAL_HOME', '/home/arcyfields'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('SNAP_EUID', '1000'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/clion/425'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/arcyfields/ros2/homework_ws/install/homework:/opt/ros/humble')]), 'shell': False}
+[0.048118] (homework) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target main_node\x1b[0m\n'}
+[0.071110] (homework) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/main_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.071794] (homework) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/main_node.dir/src/kalman_filter_and_smth_else.cpp.o\x1b[0m\n'}
+[0.099527] (-) TimerEvent: {}
+[0.199833] (-) TimerEvent: {}
+[0.300225] (-) TimerEvent: {}
+[0.400557] (-) TimerEvent: {}
+[0.500856] (-) TimerEvent: {}
+[0.601538] (-) TimerEvent: {}
+[0.701818] (-) TimerEvent: {}
+[0.802097] (-) TimerEvent: {}
+[0.902495] (-) TimerEvent: {}
+[1.002832] (-) TimerEvent: {}
+[1.103136] (-) TimerEvent: {}
+[1.203429] (-) TimerEvent: {}
+[1.303725] (-) TimerEvent: {}
+[1.403967] (-) TimerEvent: {}
+[1.504342] (-) TimerEvent: {}
+[1.604613] (-) TimerEvent: {}
+[1.704888] (-) TimerEvent: {}
+[1.805126] (-) TimerEvent: {}
+[1.905365] (-) TimerEvent: {}
+[2.005607] (-) TimerEvent: {}
+[2.105924] (-) TimerEvent: {}
+[2.206250] (-) TimerEvent: {}
+[2.306499] (-) TimerEvent: {}
+[2.406761] (-) TimerEvent: {}
+[2.507139] (-) TimerEvent: {}
+[2.607389] (-) TimerEvent: {}
+[2.707773] (-) TimerEvent: {}
+[2.808140] (-) TimerEvent: {}
+[2.908405] (-) TimerEvent: {}
+[3.008654] (-) TimerEvent: {}
+[3.108922] (-) TimerEvent: {}
+[3.209206] (-) TimerEvent: {}
+[3.309803] (-) TimerEvent: {}
+[3.410318] (-) TimerEvent: {}
+[3.510757] (-) TimerEvent: {}
+[3.611206] (-) TimerEvent: {}
+[3.711737] (-) TimerEvent: {}
+[3.812252] (-) TimerEvent: {}
+[3.912602] (-) TimerEvent: {}
+[4.012985] (-) TimerEvent: {}
+[4.113331] (-) TimerEvent: {}
+[4.213812] (-) TimerEvent: {}
+[4.314300] (-) TimerEvent: {}
+[4.414607] (-) TimerEvent: {}
+[4.515055] (-) TimerEvent: {}
+[4.615394] (-) TimerEvent: {}
+[4.715711] (-) TimerEvent: {}
+[4.815969] (-) TimerEvent: {}
+[4.916302] (-) TimerEvent: {}
+[5.016578] (-) TimerEvent: {}
+[5.116851] (-) TimerEvent: {}
+[5.217161] (-) TimerEvent: {}
+[5.317427] (-) TimerEvent: {}
+[5.417702] (-) TimerEvent: {}
+[5.517958] (-) TimerEvent: {}
+[5.618259] (-) TimerEvent: {}
+[5.718498] (-) TimerEvent: {}
+[5.818803] (-) TimerEvent: {}
+[5.919106] (-) TimerEvent: {}
+[6.019343] (-) TimerEvent: {}
+[6.119650] (-) TimerEvent: {}
+[6.219989] (-) TimerEvent: {}
+[6.264071] (homework) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable main_node\x1b[0m\n'}
+[6.320089] (-) TimerEvent: {}
+[6.420425] (-) TimerEvent: {}
+[6.520702] (-) TimerEvent: {}
+[6.620929] (-) TimerEvent: {}
+[6.721214] (-) TimerEvent: {}
+[6.722423] (homework) StdoutLine: {'line': b'[100%] Built target main_node\n'}
+[6.730920] (homework) CommandEnded: {'returncode': 0}
+[6.731303] (homework) JobProgress: {'identifier': 'homework', 'progress': 'install'}
+[6.736680] (homework) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/arcyfields/ros2/homework_ws/build/homework'], 'cwd': '/home/arcyfields/ros2/homework_ws/build/homework', 'env': OrderedDict([('TERM_SESSION_ID', '2352722d-a0c8-472b-8ad7-07e500691be0'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('SNAP_INSTANCE_KEY', ''), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('USER', 'arcyfields'), ('SNAP_COMMON', '/var/snap/clion/common'), ('XDG_SESSION_TYPE', 'x11'), ('SNAP_UID', '1000'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/share/gurumdds/cmake/../../../lib:/opt/ros/humble/lib'), ('HOME', '/home/arcyfields'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32'), ('OLDPWD', '/home/arcyfields/ros2/homework_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('SNAP_USER_DATA', '/home/arcyfields/snap/clion/425'), ('CONNEXTDDS_DIR', '/opt/rti.com/rti_connext_dds-6.0.1'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/clion_clion.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-6.0.1'), ('MANAGERPID', '1833'), ('SYSTEMD_EXEC_PID', '2169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '425'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5319'), ('COLCON_PREFIX_PATH', '/home/arcyfields/ros2/homework_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'arcyfields'), ('SNAP_CONTEXT', '15TLHSi70JkjDomYYa30rfEb2B0Hdv8KlrB9H-dF9zD6aPYgfxUD'), ('JOURNAL_STREAM', '8:9449'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', '2025.3.3'), ('USERNAME', 'arcyfields'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'clion'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/arcyfields/.platformio/penv/bin'), ('SESSION_MANAGER', 'local/Arcy:@/tmp/.ICE-unix/2141,unix/Arcy:/tmp/.ICE-unix/2141'), ('INVOCATION_ID', 'd410818ab8d841a398ef93deff7de4ee'), ('XDG_MENU_PREFIX', 'gnome-'), ('SNAP_DATA', '/var/snap/clion/425'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('DESKTOP_STARTUP_ID', 'gnome-shell/CLion/2169-2-Arcy_TIME87631'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/arcyfields/snap/clion/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/home/arcyfields/ros2/homework_ws/install/homework:/opt/ros/humble'), ('SNAP_COOKIE', '15TLHSi70JkjDomYYa30rfEb2B0Hdv8KlrB9H-dF9zD6aPYgfxUD'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SNAP_NAME', 'clion'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('CONNEXTDDS_ARCH', 'x64Linux4gcc7.3.0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/arcyfields/ros2/homework_ws/build/homework'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SNAP_REAL_HOME', '/home/arcyfields'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('SNAP_EUID', '1000'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/clion/425'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/arcyfields/ros2/homework_ws/install/homework:/opt/ros/humble')]), 'shell': False}
+[6.747489] (homework) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.747827] (homework) StdoutLine: {'line': b'-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/lib/homework/main_node\n'}
+[6.751939] (homework) StdoutLine: {'line': b'-- Set runtime path of "/home/arcyfields/ros2/homework_ws/install/homework/lib/homework/main_node" to ""\n'}
+[6.752453] (homework) StdoutLine: {'line': b'-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/package_run_dependencies/homework\n'}
+[6.752621] (homework) StdoutLine: {'line': b'-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/parent_prefix_path/homework\n'}
+[6.752743] (homework) StdoutLine: {'line': b'-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/ament_prefix_path.sh\n'}
+[6.752809] (homework) StdoutLine: {'line': b'-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/ament_prefix_path.dsv\n'}
+[6.752893] (homework) StdoutLine: {'line': b'-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/path.sh\n'}
+[6.752961] (homework) StdoutLine: {'line': b'-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/path.dsv\n'}
+[6.753056] (homework) StdoutLine: {'line': b'-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.bash\n'}
+[6.753122] (homework) StdoutLine: {'line': b'-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.sh\n'}
+[6.753212] (homework) StdoutLine: {'line': b'-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.zsh\n'}
+[6.753285] (homework) StdoutLine: {'line': b'-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.dsv\n'}
+[6.753346] (homework) StdoutLine: {'line': b'-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/package.dsv\n'}
+[6.753405] (homework) StdoutLine: {'line': b'-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/packages/homework\n'}
+[6.753474] (homework) StdoutLine: {'line': b'-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/cmake/homeworkConfig.cmake\n'}
+[6.753530] (homework) StdoutLine: {'line': b'-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/cmake/homeworkConfig-version.cmake\n'}
+[6.753580] (homework) StdoutLine: {'line': b'-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/package.xml\n'}
+[6.755110] (homework) CommandEnded: {'returncode': 0}
+[6.773243] (homework) JobEnded: {'identifier': 'homework', 'rc': 0}
+[6.774340] (-) EventReactorShutdown: {}

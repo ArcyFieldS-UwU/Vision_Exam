@@ -1,0 +1,40 @@
+[0.008s] Invoking command in '/home/arcyfields/ros2/homework_ws/build/homework': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arcyfields/ros2/homework_ws/build/homework -- -j32 -l32
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target main_node[0m
+[0.077s] [ 33%] [32mBuilding CXX object CMakeFiles/main_node.dir/src/main.cpp.o[0m
+[1.830s] [01m[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:[m[K In member function ‘[01m[Kvoid Homework::process_in_one_frame(const cv::Mat&, bool, std::vector<cv::Point_<int> >&, std::vector<cv::Point_<int> >&)[m[K’:
+[1.830s] [01m[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:51:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfaction[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.830s]    51 |     void process_in_one_frame(const cv::Mat & img, [01;35m[Kconst bool faction[m[K,
+[1.830s]       |                                                    [01;35m[K~~~~~~~~~~~^~~~~~~[m[K
+[1.830s] [01m[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:52:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfriends[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.830s]    52 |         [01;35m[Kstd::vector<cv::Point> & friends[m[K, std::vector<cv::Point> & enemies) {
+[1.830s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[1.830s] [01m[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:52:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kenemies[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.830s]    52 |         std::vector<cv::Point> & friends, [01;35m[Kstd::vector<cv::Point> & enemies[m[K) {
+[1.830s]       |                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[1.834s] [01m[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:[m[K In member function ‘[01m[Kvoid Homework::img_callback(const Image&)[m[K’:
+[1.834s] [01m[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:67:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.834s]    67 |         double [01;35m[Kdt[m[K = (now - _last_image_time).seconds();
+[1.834s]       |                [01;35m[K^~[m[K
+[5.446s] [ 66%] [32m[1mLinking CXX executable main_node[0m
+[5.889s] [100%] Built target main_node
+[5.898s] Invoked command in '/home/arcyfields/ros2/homework_ws/build/homework' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arcyfields/ros2/homework_ws/build/homework -- -j32 -l32
+[5.909s] Invoking command in '/home/arcyfields/ros2/homework_ws/build/homework': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arcyfields/ros2/homework_ws/build/homework
+[5.919s] -- Install configuration: ""
+[5.919s] -- Installing: /home/arcyfields/ros2/homework_ws/install/homework/lib/homework/main_node
+[5.922s] -- Set runtime path of "/home/arcyfields/ros2/homework_ws/install/homework/lib/homework/main_node" to ""
+[5.922s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/package_run_dependencies/homework
+[5.922s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/parent_prefix_path/homework
+[5.922s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/ament_prefix_path.sh
+[5.922s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/ament_prefix_path.dsv
+[5.922s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/path.sh
+[5.922s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/path.dsv
+[5.923s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.bash
+[5.923s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.sh
+[5.923s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.zsh
+[5.923s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.dsv
+[5.923s] -- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/package.dsv
+[5.923s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/packages/homework
+[5.923s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/cmake/homeworkConfig.cmake
+[5.923s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/cmake/homeworkConfig-version.cmake
+[5.923s] -- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/package.xml
+[5.924s] Invoked command in '/home/arcyfields/ros2/homework_ws/build/homework' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arcyfields/ros2/homework_ws/build/homework

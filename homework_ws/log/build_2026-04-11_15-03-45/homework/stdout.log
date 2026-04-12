@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target main_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/main_node.dir/src/main.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/main_node.dir/src/kalman_filter_and_smth_else.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable main_node[0m
+[100%] Built target main_node
+-- Install configuration: ""
+-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/lib/homework/main_node
+-- Set runtime path of "/home/arcyfields/ros2/homework_ws/install/homework/lib/homework/main_node" to ""
+-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/package_run_dependencies/homework
+-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/parent_prefix_path/homework
+-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/ament_prefix_path.sh
+-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/path.sh
+-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/environment/path.dsv
+-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.bash
+-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.sh
+-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.zsh
+-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/local_setup.dsv
+-- Installing: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/package.dsv
+-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/ament_index/resource_index/packages/homework
+-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/cmake/homeworkConfig.cmake
+-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/cmake/homeworkConfig-version.cmake
+-- Up-to-date: /home/arcyfields/ros2/homework_ws/install/homework/share/homework/package.xml

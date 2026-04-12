@@ -1,0 +1,162 @@
+[0.000000] (-) TimerEvent: {}
+[0.000396] (homework) JobQueued: {'identifier': 'homework', 'dependencies': OrderedDict()}
+[0.000433] (homework) JobStarted: {'identifier': 'homework'}
+[0.008084] (homework) JobProgress: {'identifier': 'homework', 'progress': 'cmake'}
+[0.008644] (homework) Command: {'cmd': ['/usr/bin/cmake', '/home/arcyfields/ros2/homework_ws/src/homework', '-DCMAKE_INSTALL_PREFIX=/home/arcyfields/ros2/homework_ws/install/homework'], 'cwd': '/home/arcyfields/ros2/homework_ws/build/homework', 'env': OrderedDict([('TERM_SESSION_ID', '2352722d-a0c8-472b-8ad7-07e500691be0'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('SNAP_INSTANCE_KEY', ''), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('USER', 'arcyfields'), ('SNAP_COMMON', '/var/snap/clion/common'), ('XDG_SESSION_TYPE', 'x11'), ('SNAP_UID', '1000'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/share/gurumdds/cmake/../../../lib:/opt/ros/humble/lib'), ('HOME', '/home/arcyfields'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32'), ('OLDPWD', '/home/arcyfields/ros2/homework_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('SNAP_USER_DATA', '/home/arcyfields/snap/clion/425'), ('CONNEXTDDS_DIR', '/opt/rti.com/rti_connext_dds-6.0.1'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/clion_clion.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-6.0.1'), ('MANAGERPID', '1833'), ('SYSTEMD_EXEC_PID', '2169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '425'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5319'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'arcyfields'), ('SNAP_CONTEXT', '15TLHSi70JkjDomYYa30rfEb2B0Hdv8KlrB9H-dF9zD6aPYgfxUD'), ('JOURNAL_STREAM', '8:9449'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', '2025.3.3'), ('USERNAME', 'arcyfields'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'clion'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/arcyfields/.platformio/penv/bin'), ('SESSION_MANAGER', 'local/Arcy:@/tmp/.ICE-unix/2141,unix/Arcy:/tmp/.ICE-unix/2141'), ('INVOCATION_ID', 'd410818ab8d841a398ef93deff7de4ee'), ('XDG_MENU_PREFIX', 'gnome-'), ('SNAP_DATA', '/var/snap/clion/425'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('DESKTOP_STARTUP_ID', 'gnome-shell/CLion/2169-2-Arcy_TIME87631'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/arcyfields/snap/clion/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SNAP_COOKIE', '15TLHSi70JkjDomYYa30rfEb2B0Hdv8KlrB9H-dF9zD6aPYgfxUD'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SNAP_NAME', 'clion'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('CONNEXTDDS_ARCH', 'x64Linux4gcc7.3.0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/arcyfields/ros2/homework_ws/build/homework'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SNAP_REAL_HOME', '/home/arcyfields'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('SNAP_EUID', '1000'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/clion/425'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099928] (-) TimerEvent: {}
+[0.155491] (homework) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.200194] (-) TimerEvent: {}
+[0.258917] (homework) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.266982] (homework) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300378] (-) TimerEvent: {}
+[0.354215] (homework) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.362188] (homework) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.363170] (homework) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.363644] (homework) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.368031] (homework) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400616] (-) TimerEvent: {}
+[0.459290] (homework) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.464899] (homework) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.465180] (homework) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.465724] (homework) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.468352] (homework) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.500746] (-) TimerEvent: {}
+[0.600958] (-) TimerEvent: {}
+[0.616726] (homework) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.701033] (-) TimerEvent: {}
+[0.738006] (homework) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.742476] (homework) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.751695] (homework) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.770764] (homework) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.784636] (homework) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.801144] (-) TimerEvent: {}
+[0.819940] (homework) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.822270] (homework) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.901306] (-) TimerEvent: {}
+[0.908259] (homework) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.940776] (homework) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.982814] (homework) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.995439] (homework) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.001393] (-) TimerEvent: {}
+[1.058155] (homework) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.058398] (homework) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.101530] (-) TimerEvent: {}
+[1.113959] (homework) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.114819] (homework) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.159477] (homework) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.196223] (homework) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[1.198392] (homework) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.201576] (-) TimerEvent: {}
+[1.268280] (homework) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.268417] (homework) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/arcyfields/ros2/homework_ws/src/homework/include/homework;/home/arcyfields/ros2/homework_ws/src/homework/msg_serializer\n'}
+[1.268466] (homework) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.270763] (homework) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.275441] (homework) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.275486] (homework) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.276250] (homework) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.277146] (homework) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.285270] (homework) StdoutLine: {'line': b'-- Generating done\n'}
+[1.288055] (homework) StdoutLine: {'line': b'-- Build files have been written to: /home/arcyfields/ros2/homework_ws/build/homework\n'}
+[1.294406] (homework) CommandEnded: {'returncode': 0}
+[1.294866] (homework) JobProgress: {'identifier': 'homework', 'progress': 'build'}
+[1.295303] (homework) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/arcyfields/ros2/homework_ws/build/homework', '--', '-j32', '-l32'], 'cwd': '/home/arcyfields/ros2/homework_ws/build/homework', 'env': OrderedDict([('TERM_SESSION_ID', '2352722d-a0c8-472b-8ad7-07e500691be0'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('SNAP_INSTANCE_KEY', ''), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('USER', 'arcyfields'), ('SNAP_COMMON', '/var/snap/clion/common'), ('XDG_SESSION_TYPE', 'x11'), ('SNAP_UID', '1000'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/share/gurumdds/cmake/../../../lib:/opt/ros/humble/lib'), ('HOME', '/home/arcyfields'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32'), ('OLDPWD', '/home/arcyfields/ros2/homework_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('SNAP_USER_DATA', '/home/arcyfields/snap/clion/425'), ('CONNEXTDDS_DIR', '/opt/rti.com/rti_connext_dds-6.0.1'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/clion_clion.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-6.0.1'), ('MANAGERPID', '1833'), ('SYSTEMD_EXEC_PID', '2169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '425'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5319'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'arcyfields'), ('SNAP_CONTEXT', '15TLHSi70JkjDomYYa30rfEb2B0Hdv8KlrB9H-dF9zD6aPYgfxUD'), ('JOURNAL_STREAM', '8:9449'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', '2025.3.3'), ('USERNAME', 'arcyfields'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'clion'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/arcyfields/.platformio/penv/bin'), ('SESSION_MANAGER', 'local/Arcy:@/tmp/.ICE-unix/2141,unix/Arcy:/tmp/.ICE-unix/2141'), ('INVOCATION_ID', 'd410818ab8d841a398ef93deff7de4ee'), ('XDG_MENU_PREFIX', 'gnome-'), ('SNAP_DATA', '/var/snap/clion/425'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('DESKTOP_STARTUP_ID', 'gnome-shell/CLion/2169-2-Arcy_TIME87631'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/arcyfields/snap/clion/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SNAP_COOKIE', '15TLHSi70JkjDomYYa30rfEb2B0Hdv8KlrB9H-dF9zD6aPYgfxUD'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SNAP_NAME', 'clion'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('CONNEXTDDS_ARCH', 'x64Linux4gcc7.3.0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/arcyfields/ros2/homework_ws/build/homework'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SNAP_REAL_HOME', '/home/arcyfields'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('SNAP_EUID', '1000'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/clion/425'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.301639] (-) TimerEvent: {}
+[1.345474] (homework) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/main_node.dir/src/main.cpp.o\x1b[0m\n'}
+[1.346116] (homework) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/main_node.dir/src/serial_port.cpp.o\x1b[0m\n'}
+[1.401766] (-) TimerEvent: {}
+[1.490861] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/serial_port.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SerialPort::open_port(const string&, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.491012] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/serial_port.cpp:15:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfd_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.491055] (homework) StderrLine: {'line': b'   15 |     \x1b[01;31m\x1b[Kfd_\x1b[m\x1b[K = open(device.c_str(), O_RDWR | O_NOCTTY | O_SYNC);\n'}
+[1.491087] (homework) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.494045] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/serial_port.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SerialPort::close_port()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.494157] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/serial_port.cpp:50:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfd_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.494195] (homework) StderrLine: {'line': b'   50 |     std::cerr << "close_port called, fd = " << \x1b[01;31m\x1b[Kfd_\x1b[m\x1b[K << std::endl;\n'}
+[1.494226] (homework) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.494255] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/serial_port.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSerialPort::SerialPort()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.494286] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/serial_port.cpp:57:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KSerialPort\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kfd_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.494317] (homework) StderrLine: {'line': b'   57 | SerialPort::SerialPort() : \x1b[01;31m\x1b[Kfd_\x1b[m\x1b[K(-1) {\n'}
+[1.494351] (homework) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.494389] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/serial_port.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSerialPort::SerialPort(const string&, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.494423] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/serial_port.cpp:61:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KSerialPort\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kfd_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.494464] (homework) StderrLine: {'line': b'   61 | SerialPort::SerialPort(const std::string & device, int baud_rate) : \x1b[01;31m\x1b[Kfd_\x1b[m\x1b[K(-1) {\n'}
+[1.494492] (homework) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.495057] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/serial_port.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid write(const uint8_t*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.495137] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/serial_port.cpp:70:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfd_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.495179] (homework) StderrLine: {'line': b'   70 |     if (\x1b[01;31m\x1b[Kfd_\x1b[m\x1b[K < 0) {\n'}
+[1.495211] (homework) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.495794] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/serial_port.cpp:74:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfd_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.495876] (homework) StderrLine: {'line': b'   74 |     ssize_t written = ::write(\x1b[01;31m\x1b[Kfd_\x1b[m\x1b[K, date, size);\n'}
+[1.495912] (homework) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.501866] (-) TimerEvent: {}
+[1.513143] (homework) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/main_node.dir/build.make:90\xef\xbc\x9aCMakeFiles/main_node.dir/src/serial_port.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[1.513236] (homework) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[1.601999] (-) TimerEvent: {}
+[1.702228] (-) TimerEvent: {}
+[1.802674] (-) TimerEvent: {}
+[1.902931] (-) TimerEvent: {}
+[2.003173] (-) TimerEvent: {}
+[2.103549] (-) TimerEvent: {}
+[2.203834] (-) TimerEvent: {}
+[2.304076] (-) TimerEvent: {}
+[2.404314] (-) TimerEvent: {}
+[2.504555] (-) TimerEvent: {}
+[2.604795] (-) TimerEvent: {}
+[2.705131] (-) TimerEvent: {}
+[2.805413] (-) TimerEvent: {}
+[2.905668] (-) TimerEvent: {}
+[3.005946] (-) TimerEvent: {}
+[3.102288] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Homework::process_in_one_frame(const cv::Mat&, bool, std::vector<cv::Point_<int> >&, std::vector<cv::Point_<int> >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.102450] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:51:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kfaction\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.102497] (homework) StderrLine: {'line': b'   51 |     void process_in_one_frame(const cv::Mat & img, \x1b[01;35m\x1b[Kconst bool faction\x1b[m\x1b[K,\n'}
+[3.102533] (homework) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[3.102567] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:52:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kfriends\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.102600] (homework) StderrLine: {'line': b'   52 |         \x1b[01;35m\x1b[Kstd::vector<cv::Point> & friends\x1b[m\x1b[K, std::vector<cv::Point> & enemies) {\n'}
+[3.102632] (homework) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[3.102666] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:52:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kenemies\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.102716] (homework) StderrLine: {'line': b'   52 |         std::vector<cv::Point> & friends, \x1b[01;35m\x1b[Kstd::vector<cv::Point> & enemies\x1b[m\x1b[K) {\n'}
+[3.102753] (homework) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[3.105998] (-) TimerEvent: {}
+[3.106552] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Homework::img_callback(const Image&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.106617] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:67:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kdt\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.106656] (homework) StderrLine: {'line': b'   67 |         double \x1b[01;35m\x1b[Kdt\x1b[m\x1b[K = (now - _last_image_time).seconds();\n'}
+[3.106694] (homework) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.206134] (-) TimerEvent: {}
+[3.306409] (-) TimerEvent: {}
+[3.406629] (-) TimerEvent: {}
+[3.506850] (-) TimerEvent: {}
+[3.607081] (-) TimerEvent: {}
+[3.707298] (-) TimerEvent: {}
+[3.807517] (-) TimerEvent: {}
+[3.907722] (-) TimerEvent: {}
+[4.008037] (-) TimerEvent: {}
+[4.108361] (-) TimerEvent: {}
+[4.208583] (-) TimerEvent: {}
+[4.308839] (-) TimerEvent: {}
+[4.409089] (-) TimerEvent: {}
+[4.509422] (-) TimerEvent: {}
+[4.609738] (-) TimerEvent: {}
+[4.710003] (-) TimerEvent: {}
+[4.810248] (-) TimerEvent: {}
+[4.910510] (-) TimerEvent: {}
+[5.010748] (-) TimerEvent: {}
+[5.110979] (-) TimerEvent: {}
+[5.211210] (-) TimerEvent: {}
+[5.311446] (-) TimerEvent: {}
+[5.411679] (-) TimerEvent: {}
+[5.511925] (-) TimerEvent: {}
+[5.612174] (-) TimerEvent: {}
+[5.712508] (-) TimerEvent: {}
+[5.812763] (-) TimerEvent: {}
+[5.913060] (-) TimerEvent: {}
+[6.013385] (-) TimerEvent: {}
+[6.113603] (-) TimerEvent: {}
+[6.213900] (-) TimerEvent: {}
+[6.314556] (-) TimerEvent: {}
+[6.414923] (-) TimerEvent: {}
+[6.515224] (-) TimerEvent: {}
+[6.615564] (-) TimerEvent: {}
+[6.669642] (homework) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/main_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.670165] (homework) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.671921] (homework) CommandEnded: {'returncode': 2}
+[6.683327] (homework) JobEnded: {'identifier': 'homework', 'rc': 2}
+[6.693959] (-) EventReactorShutdown: {}

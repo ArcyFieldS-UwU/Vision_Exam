@@ -1,6 +1,0 @@
-Invoking command in '/home/arcyfields/ros2/ros2_ws/build/calculating_client': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/arcyfields/ros2/ros2_ws/src/calculating_client -DCMAKE_INSTALL_PREFIX=/home/arcyfields/ros2/ros2_ws/install/calculating_client
-Invoked command in '/home/arcyfields/ros2/ros2_ws/build/calculating_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/arcyfields/ros2/ros2_ws/src/calculating_client -DCMAKE_INSTALL_PREFIX=/home/arcyfields/ros2/ros2_ws/install/calculating_client
-Invoking command in '/home/arcyfields/ros2/ros2_ws/build/calculating_client': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/arcyfields/ros2/ros2_ws/build/calculating_client -- -j32 -l32
-Invoked command in '/home/arcyfields/ros2/ros2_ws/build/calculating_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/arcyfields/ros2/ros2_ws/build/calculating_client -- -j32 -l32
-Invoking command in '/home/arcyfields/ros2/ros2_ws/build/calculating_client': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/arcyfields/ros2/ros2_ws/build/calculating_client
-Invoked command in '/home/arcyfields/ros2/ros2_ws/build/calculating_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/arcyfields/ros2/ros2_ws/build/calculating_client

@@ -1,0 +1,4 @@
+[01m[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:[m[K In member function ‘[01m[Kvoid Homework::img_callback(const Image&)[m[K’:
+[01m[K/home/arcyfields/ros2/homework_ws/src/homework/src/main.cpp:136:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  136 |         double [01;35m[Kdt[m[K = (now - _last_image_time).seconds();
+      |                [01;35m[K^~[m[K
