@@ -1,0 +1,5 @@
+vision_node:
+  ros__parameters:
+    is_debug: false
+    show_vel: false
+    show_acc: false
