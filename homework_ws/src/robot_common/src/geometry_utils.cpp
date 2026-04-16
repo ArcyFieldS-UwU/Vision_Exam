@@ -27,7 +27,7 @@ namespace robot_common {
 
     cv::Point get_pre_point(cv::Point pos, cv::Point vel, cv::Point acc, double dt, const cv::Point EMITTER_POS) {
         const double BULLER_SPPED = 600.0;
-        const double BUFF = 0.6;
+        const double BUFF = 0.85;
 
         double effective_t = dt * BUFF;
         double dis = get_euclidean_distance(pos, EMITTER_POS) + effective_t * BULLER_SPPED;
