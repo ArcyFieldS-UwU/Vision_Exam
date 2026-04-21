@@ -17,10 +17,16 @@ namespace robot_detector {
             [this] (const std_msgs::msg::Empty & ) { is_checked = false; }
         );
 
-        _fri_data_pub = this->create_publisher<robot_interfaces::msg::ArmorArray>("/fri_data", 10);
-        _ene_data_pub = this->create_publisher<robot_interfaces::msg::ArmorArray>("/ene_data", 10);
+        _friends_data_pub = this->create_publisher<robot_interfaces::msg::ArmorArray>(
+            "/friends_data", 10
+        );
+        _enemies_data_pub = this->create_publisher<robot_interfaces::msg::ArmorArray>(
+            "/enemies_data", 10
+        );
 
         _last_image_time = this->now();
+
+        RCLCPP_INFO(this->get_logger(), "Detector is now ON.");
     };
 
     bool DetectorNode::check_faction(const cv::Mat & img) {
@@ -93,63 +99,60 @@ namespace robot_detector {
             return;
         }
 
-        {
-            std::lock_guard<std::mutex> lock(_data_mutex);
-            rclcpp::Time now = this->now();
-            double dt = (now - _last_image_time).seconds();
-            _last_image_time = now;
+        rclcpp::Time now = this->now();
+        double dt = (now - _last_image_time).seconds();
+        _last_image_time = now;
 
-            faction = check_faction(img);
-            std::vector<cv::Point> friends, enemies;
-            process_in_one_frame(img, faction, friends, enemies);
+        faction = check_faction(img);
+        std::vector<cv::Point> friends, enemies;
+        process_in_one_frame(img, faction, friends, enemies);
 
-            robot_interfaces::msg::ArmorArray fri_data_to_pub;
-            robot_interfaces::msg::ArmorArray ene_data_to_pub;
+        robot_interfaces::msg::ArmorArray friends_data_to_pub;
+        robot_interfaces::msg::ArmorArray enemies_data_to_pub;
 
-            _tracker_fri.update(friends, dt);
-            std::vector<robot_common::Armor> friends_data = _tracker_fri.get_data();
-            for (auto & fri : friends_data) {
-                robot_interfaces::msg::Armor armor;
-                armor.id = fri.id;
+        _tracker_friends.update(friends, dt);
+        std::vector<robot_common::Armor> friends_data = _tracker_friends.get_data();
+        for (auto & friend_ : friends_data) {
+            robot_interfaces::msg::Armor armor;
+            armor.id = friend_.id;
 
-                armor.pos.x = fri.pos.x;
-                armor.pos.y = fri.pos.y;
+            armor.pos.x = friend_.pos.x;
+            armor.pos.y = friend_.pos.y;
 
-                armor.vel.x = fri.vel.x;
-                armor.vel.y = fri.vel.y;
+            armor.vel.x = friend_.vel.x;
+            armor.vel.y = friend_.vel.y;
 
-                armor.acc.x = fri.acc.x;
-                armor.acc.y = fri.acc.y;
+            armor.acc.x = friend_.acc.x;
+            armor.acc.y = friend_.acc.y;
 
-                armor.lost_count = fri.lost_count;
-                fri_data_to_pub.armors.emplace_back(armor);
-            }
-            _tracker_ene.update(enemies, dt);
-            std::vector<robot_common::Armor> enemies_data = _tracker_ene.get_data();
-            for (auto & ene : enemies_data) {
-                robot_interfaces::msg::Armor armor;
-                armor.id = ene.id;
-
-                armor.pos.x = ene.pos.x;
-                armor.pos.y = ene.pos.y;
-
-                armor.vel.x = ene.vel.x;
-                armor.vel.y = ene.vel.y;
-
-                armor.acc.x = ene.acc.x;
-                armor.acc.y = ene.acc.y;
-
-                armor.lost_count = ene.lost_count;
-                ene_data_to_pub.armors.emplace_back(armor);
-            }
-
-            now = this->now();
-
-            fri_data_to_pub.dt = (now - _last_image_time).seconds();
-            ene_data_to_pub.dt = (now - _last_image_time).seconds();
-
-            _fri_data_pub->publish(fri_data_to_pub);
-            _ene_data_pub->publish(ene_data_to_pub);
+            armor.lost_count = friend_.lost_count;
+            friends_data_to_pub.armors.emplace_back(armor);
         }
+        _tracker_enemies.update(enemies, dt);
+        std::vector<robot_common::Armor> enemies_data = _tracker_enemies.get_data();
+        for (auto & enemy_ : enemies_data) {
+            robot_interfaces::msg::Armor armor;
+            armor.id = enemy_.id;
+
+            armor.pos.x = enemy_.pos.x;
+            armor.pos.y = enemy_.pos.y;
+
+            armor.vel.x = enemy_.vel.x;
+            armor.vel.y = enemy_.vel.y;
+
+            armor.acc.x = enemy_.acc.x;
+            armor.acc.y = enemy_.acc.y;
+
+            armor.lost_count = enemy_.lost_count;
+            enemies_data_to_pub.armors.emplace_back(armor);
+        }
+
+        now = this->now();
+
+        friends_data_to_pub.dt = (now - _last_image_time).seconds();
+        enemies_data_to_pub.dt = (now - _last_image_time).seconds();
+
+        _friends_data_pub->publish(friends_data_to_pub);
+        _enemies_data_pub->publish(enemies_data_to_pub);
     }
 };

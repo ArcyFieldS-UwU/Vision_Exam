@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(robot_decision_n_vision)
+project(robot_detector)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -8,12 +8,12 @@ endif()
 set(DEPENDENCIES
         rclcpp
         cv_bridge
+        sensor_msgs
         OpenCV
+        robot_common
         serial_port
         robot_interfaces
-        robot_common
         std_msgs
-        sensor_msgs
 )
 
 foreach(DEPENDENCY ${DEPENDENCIES})
@@ -26,23 +26,18 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-add_executable(vision_node src/robot_vision.cpp src/vision.cpp)
-add_executable(decision_node src/robot_decision.cpp src/decision.cpp)
-target_link_libraries(vision_node
-        ${OpenCV_LIBRARIES}
-)
-target_link_libraries(decision_node
+add_executable(detector_node src/main.cpp src/detector_node.cpp)
+target_link_libraries(detector_node
         ${OpenCV_LIBRARIES}
         robot_common::robot_common
+        serial_port::serial_port
+        serial_port::serialib
 )
-target_include_directories(vision_node PUBLIC
+target_include_directories(detector_node PUBLIC
         include
+        msg_serializer
 )
-target_include_directories(decision_node PUBLIC
-        include
-)
-ament_target_dependencies(vision_node OpenCV cv_bridge robot_interfaces robot_common rclcpp sensor_msgs)
-ament_target_dependencies(decision_node OpenCV robot_interfaces serial_port robot_common rclcpp std_msgs)
+ament_target_dependencies(detector_node ${DEPENDENCIES})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -56,8 +51,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(
-        TARGETS vision_node decision_node
+install(TARGETS detector_node
         DESTINATION lib/${PROJECT_NAME}
 )
 

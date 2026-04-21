@@ -23,7 +23,7 @@ namespace robot_common {
                           double dt,
                           const cv::Point EMITTER_POS,
                           std::vector<std::pair<cv::Point, cv::Point> > & friends_pre_contours);
-    cv::Point get_pre_ene(const Armor & armor, const cv::Point EMITTER_POS, double dt);
+    cv::Point get_pre_enemy(const Armor & armor, const cv::Point EMITTER_POS, double dt);
 }
 
 #endif //ROBOT_DETECTOR_GEOMETRY_UTILS_HPP

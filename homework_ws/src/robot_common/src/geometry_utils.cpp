@@ -4,6 +4,9 @@
 
 #include "robot_common/geometry_utils.hpp"
 
+const int ARMOR_WIDTH = 64;
+const int ARMOR_HEIGHT = ARMOR_WIDTH / 2;
+
 namespace robot_common {
     bool is_intersectant(const cv::Point p11, const cv::Point p12, const cv::Point p21, const cv::Point p22) {
         if (std::max(p11.x, p12.x) < std::min(p21.x, p22.x) ||
@@ -27,7 +30,7 @@ namespace robot_common {
 
     cv::Point get_pre_point(cv::Point pos, cv::Point vel, cv::Point acc, double dt, const cv::Point EMITTER_POS) {
         const double BULLER_SPPED = 600.0;
-        const double BUFF = 0.85;
+        const double BUFF = 0.6;
 
         double effective_t = dt * BUFF;
         double dis = get_euclidean_distance(pos, EMITTER_POS) + effective_t * BULLER_SPPED;
@@ -48,31 +51,31 @@ namespace robot_common {
         cv::Point pos = armor.pos, vel = armor.vel, acc = armor.acc;
 
         // LB
-        pos.y += 16;
-        pos.x -= 32;
+        pos.y += ARMOR_HEIGHT / 2;
+        pos.x -= ARMOR_WIDTH / 2;
         cv::Point p1 = get_pre_point(pos, vel, acc, dt, EMITTER_POS);
 
         // RB
-        pos.x += 64;
+        pos.x += ARMOR_WIDTH;
         cv::Point p2 = get_pre_point(pos, vel, acc, dt, EMITTER_POS);
 
         // LT
-        pos.y -= 32;
-        pos.x -= 64;
+        pos.y -= ARMOR_HEIGHT;
+        pos.x -= ARMOR_WIDTH;
         cv::Point p3 = get_pre_point(pos, vel, acc, dt, EMITTER_POS);
 
         // RT
-        pos.x += 64;
+        pos.x += ARMOR_WIDTH;
         cv::Point p4 = get_pre_point(pos, vel, acc, dt, EMITTER_POS);
 
         friends_pre_contours.emplace_back(p1, p2); // Bottom
         friends_pre_contours.emplace_back(p3, p4); // Top
     }
-    cv::Point get_pre_ene(const Armor & armor, const cv::Point EMITTER_POS, double dt) {
+    cv::Point get_pre_enemy(const Armor & armor, const cv::Point EMITTER_POS, double dt) {
         cv::Point pos = armor.pos, vel = armor.vel, acc = armor.acc;
 
         // Choose the Bottom as the shooting point.
-        pos.y += 16;
+        pos.y += ARMOR_HEIGHT / 2;
         cv::Point p = get_pre_point(pos, vel, acc, dt, EMITTER_POS);
 
         return p;

@@ -7,7 +7,7 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
 
     detector_node = Node(
-        package = 'homework_bringup',
+        package = 'robot_detector',
         executable = 'detector_node',
         name = 'detector_node',
     )
@@ -18,7 +18,7 @@ def generate_launch_description():
         name = 'decision_node',
         parameters = [
             os.path.join(
-                get_package_share_directory('robot_decision_n_vision'),
+                get_package_share_directory('homework_bringup'),
                 'config',
                 'decision_params.yaml'
             ),
@@ -32,7 +32,7 @@ def generate_launch_description():
         name = 'vision_node',
         parameters = [
             os.path.join(
-                get_package_share_directory('robot_decision_n_vision'),
+                get_package_share_directory('homework_bringup'),
                 'config',
                 'vision_params.yaml'
             ),

@@ -26,15 +26,13 @@ namespace robot_detector {
     private:
         rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr _image_sub;
         rclcpp::Subscription<std_msgs::msg::Empty>::SharedPtr _port_switch_sub;
-        rclcpp::Publisher<robot_interfaces::msg::ArmorArray>::SharedPtr _fri_data_pub;
-        rclcpp::Publisher<robot_interfaces::msg::ArmorArray>::SharedPtr _ene_data_pub;
+        rclcpp::Publisher<robot_interfaces::msg::ArmorArray>::SharedPtr _friends_data_pub;
+        rclcpp::Publisher<robot_interfaces::msg::ArmorArray>::SharedPtr _enemies_data_pub;
 
-        robot_common::Tracker _tracker_fri;
-        robot_common::Tracker _tracker_ene;
+        robot_common::Tracker _tracker_friends;
+        robot_common::Tracker _tracker_enemies;
 
         rclcpp::Time _last_image_time;
-
-        std::mutex _data_mutex;
 
         bool is_checked = false;
         bool faction = false;

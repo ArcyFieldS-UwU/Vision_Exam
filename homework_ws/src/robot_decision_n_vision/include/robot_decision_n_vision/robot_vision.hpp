@@ -20,9 +20,11 @@ namespace robot_vision {
     private:
         rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr _image_sub;
 
-        rclcpp::Subscription<robot_interfaces::msg::ArmorArray>::SharedPtr _ene_data_sub;
+        rclcpp::Subscription<robot_interfaces::msg::ArmorArray>::SharedPtr _enemies_data_sub;
 
         rclcpp::ParameterEventHandler _param_handler;
+
+        rclcpp::Time _last_log_time;
 
         std::vector<robot_common::Armor> _enemies_data;
 
@@ -35,7 +37,7 @@ namespace robot_vision {
         std::shared_ptr<rclcpp::ParameterCallbackHandle> _vel_param_cb;
         std::shared_ptr<rclcpp::ParameterCallbackHandle> _acc_param_cb;
 
-        void ene_data_callback(const robot_interfaces::msg::ArmorArray & ene_data);
+        void enemies_data_callback(const robot_interfaces::msg::ArmorArray & enemies_data);
     };
 }
 

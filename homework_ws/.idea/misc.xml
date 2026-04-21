@@ -6,7 +6,7 @@
   <component name="CMakePythonSetting">
     <option name="pythonIntegrationState" value="YES" />
   </component>
-  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/src/robot_decision_n_vision">
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/src/robot_detector">
     <contentRoot DIR="$PROJECT_DIR$" />
   </component>
 </project>

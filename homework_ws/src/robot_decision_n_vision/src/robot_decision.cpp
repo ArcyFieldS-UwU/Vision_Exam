@@ -16,13 +16,13 @@ message_data fire_msg_data {
 namespace robot_decider {
     DecisionNode::DecisionNode(const rclcpp::NodeOptions& options) : Node("decision_node", options),
                                                                      _param_handler(this) {
-        _fri_data_sub = this->create_subscription<robot_interfaces::msg::ArmorArray>(
-            "/fri_data", 10,
-            std::bind(& DecisionNode::fri_data_callback, this, std::placeholders::_1)
+        _friends_data_sub = this->create_subscription<robot_interfaces::msg::ArmorArray>(
+            "/friends_data", 10,
+            std::bind(& DecisionNode::friends_data_callback, this, std::placeholders::_1)
         );
-        _ene_data_sub = this->create_subscription<robot_interfaces::msg::ArmorArray>(
-            "/ene_data", 10,
-            std::bind(& DecisionNode::ene_data_callback, this, std::placeholders::_1)
+        _enemies_data_sub = this->create_subscription<robot_interfaces::msg::ArmorArray>(
+            "/enemies_data", 10,
+            std::bind(& DecisionNode::enemies_data_callback, this, std::placeholders::_1)
         );
         _port_switch_pub = this->create_publisher<std_msgs::msg::Empty>("/port_switch", 10);
 
@@ -51,16 +51,16 @@ namespace robot_decider {
         _last_fire_time = this->now();
     }
 
-    void DecisionNode::fri_data_callback(const robot_interfaces::msg::ArmorArray & fri_data) {
+    void DecisionNode::friends_data_callback(const robot_interfaces::msg::ArmorArray & friends_data) {
         _friends_data.clear();
-        for (auto & fri : fri_data.armors) {
-            robot_common::Armor armor(fri.id, cv::Point(fri.pos.x, fri.pos.y));
-            armor.vel = cv::Point(fri.vel.x, fri.vel.y);
-            armor.acc = cv::Point(fri.acc.x, fri.acc.y);
+        for (auto & friend_ : friends_data.armors) {
+            robot_common::Armor armor(friend_.id, cv::Point(friend_.pos.x, friend_.pos.y));
+            armor.vel = cv::Point(friend_.vel.x, friend_.vel.y);
+            armor.acc = cv::Point(friend_.acc.x, friend_.acc.y);
             _friends_data.emplace_back(armor);
         }
 
-        double dt = fri_data.dt;
+        double dt = friends_data.dt;
         _friends_pre_contours.clear();
         if (!_friends_data.empty()) {
             for (auto & armor : _friends_data) {
@@ -68,25 +68,25 @@ namespace robot_decider {
             }
         }
     }
-    void DecisionNode::ene_data_callback(const robot_interfaces::msg::ArmorArray & ene_data) {
+    void DecisionNode::enemies_data_callback(const robot_interfaces::msg::ArmorArray & enemies_data) {
         auto port = std::atomic_load(& _serial_port);
         _enemies_data.clear();
-        for (auto & ene : ene_data.armors) {
-            robot_common::Armor armor(ene.id, cv::Point(ene.pos.x, ene.pos.y));
-            armor.vel = cv::Point(ene.vel.x, ene.vel.y);
-            armor.acc = cv::Point(ene.acc.x, ene.acc.y);
+        for (auto & enemy_ : enemies_data.armors) {
+            robot_common::Armor armor(enemy_.id, cv::Point(enemy_.pos.x, enemy_.pos.y));
+            armor.vel = cv::Point(enemy_.vel.x, enemy_.vel.y);
+            armor.acc = cv::Point(enemy_.acc.x, enemy_.acc.y);
             _enemies_data.emplace_back(armor);
         }
 
-        double best_dis = 1e5, dt = ene_data.dt;
+        double best_dis = 1e5, dt = enemies_data.dt;
         cv::Point best_select(0, 0);
         for (auto & enemy : _enemies_data) {
-            cv::Point pre_ene = robot_common::get_pre_ene(enemy, EMITTER_POS, dt);
+            cv::Point pre_enemy = robot_common::get_pre_enemy(enemy, EMITTER_POS, dt);
 
             bool is_friendly_fire = false;
             if (!_friends_data.empty()) {
                 for (auto & contour : _friends_pre_contours) {
-                    is_friendly_fire |= robot_common::is_intersectant(EMITTER_POS, pre_ene,
+                    is_friendly_fire |= robot_common::is_intersectant(EMITTER_POS, pre_enemy,
                         contour.first, contour.second);
                 }
             }
@@ -94,10 +94,10 @@ namespace robot_decider {
                 continue;
             }
 
-            double dis = robot_common::get_euclidean_distance(EMITTER_POS, pre_ene);
+            double dis = robot_common::get_euclidean_distance(EMITTER_POS, pre_enemy);
             if (dis < best_dis) {
                 best_dis = dis;
-                best_select = pre_ene;
+                best_select = pre_enemy;
             }
         }
         if (best_select.x == 0 && best_select.y == 0) {

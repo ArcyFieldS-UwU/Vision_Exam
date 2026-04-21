@@ -19,8 +19,8 @@ namespace robot_decider {
     public:
         DecisionNode(const rclcpp::NodeOptions & options);
     private:
-        rclcpp::Subscription<robot_interfaces::msg::ArmorArray>::SharedPtr _fri_data_sub;
-        rclcpp::Subscription<robot_interfaces::msg::ArmorArray>::SharedPtr _ene_data_sub;
+        rclcpp::Subscription<robot_interfaces::msg::ArmorArray>::SharedPtr _friends_data_sub;
+        rclcpp::Subscription<robot_interfaces::msg::ArmorArray>::SharedPtr _enemies_data_sub;
 
         rclcpp::Publisher<std_msgs::msg::Empty>::SharedPtr _port_switch_pub;
 
@@ -35,8 +35,8 @@ namespace robot_decider {
 
         rclcpp::Time _last_fire_time;
 
-        void fri_data_callback(const robot_interfaces::msg::ArmorArray & fri_data);
-        void ene_data_callback(const robot_interfaces::msg::ArmorArray & ene_data);
+        void friends_data_callback(const robot_interfaces::msg::ArmorArray & friends_data);
+        void enemies_data_callback(const robot_interfaces::msg::ArmorArray & enemies_data);
     };
 }
 
